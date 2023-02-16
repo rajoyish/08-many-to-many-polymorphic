@@ -17,7 +17,7 @@ class PostFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->catchPhrase()
+            'name' => fake()->catchPhrase(),
         ];
     }
 }
