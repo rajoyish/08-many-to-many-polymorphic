@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\IndexPostController;
+use App\Http\Controllers\IndexVideoController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('posts', IndexPostController::class)->name('posts');
+Route::get('videos', IndexVideoController::class)->name('videos');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
